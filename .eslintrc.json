@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "semi": [2, "never"],
+    "no-unexpected-multiline": 2
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  }
+}

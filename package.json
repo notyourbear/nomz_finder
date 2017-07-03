@@ -1,0 +1,31 @@
+{
+  "name": "NomzFinder",
+  "version": "1.0.0",
+  "author": "Patrick Racenberg",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint src && eslint gulpfile.js",
+    "start": "open dist/index.html",
+    "build": "gulp build",
+    "buildProd": "gulp prod"
+  },
+  "devDependencies": {
+    "del": "^3.0.0",
+    "eslint": "^3.19.0",
+    "eslint-plugin-import": "^2.2.0",
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-concat-util": "^0.5.5",
+    "gulp-less": "^3.3.2",
+    "gulp-pug": "^3.3.0",
+    "gulp-pug-inheritance": "^0.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "less-plugin-autoprefix": "^1.5.1",
+    "less-plugin-clean-css": "^1.5.1",
+    "pump": "^1.0.2",
+    "rollup-stream": "^1.21.0",
+    "uglify-es": "^3.0.23",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,41 @@
+.animation(@name; @opacity){
+  animation-name: @name;
+  opacity: @opacity;
+}
+
+.move(@endDegree){
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(@endDegree);
+  }
+}
+
+.loader {
+  padding: 40px 50%;
+  .ball {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 24px;
+    background: black;
+    transform-origin: 0 40px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+}
+
+.shadow-1 { .animation('rotate-1', 1); }
+.shadow-2 { .animation('rotate-2', 0.8); }
+.shadow-3 { .animation('rotate-3', 0.6); }
+.shadow-4 { .animation('rotate-4', 0.4); }
+.shadow-5 { .animation('rotate-5', 0.3); }
+.shadow-6 { .animation('rotate-6', 0.2); }
+
+@keyframes rotate-1 {.move(360deg);}
+@keyframes rotate-2 {.move(300deg);}
+@keyframes rotate-3 {.move(240deg);}
+@keyframes rotate-4 {.move(180deg);}
+@keyframes rotate-5 {.move(120deg);}
+@keyframes rotate-6 {.move(60deg);}

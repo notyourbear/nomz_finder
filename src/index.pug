@@ -1,0 +1,31 @@
+doctype html
+html(lang='eng')
+  head
+    title Place Searcher
+    meta(name='viewport', content='initial-scale=1.0, user-scalable=no')
+    meta(http-equiv="Content-Type", content="text/html", charset='utf-8')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css')
+    script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFSpS8yKnWt4cb1h82MLpEZtL-i_fA3M8&libraries=places")
+    script(type="text/javascript", src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js")
+    script
+      include ../temp/includes/firebase.js
+    script(src='./main.js' async defer)
+    style
+      include ../temp/includes/critical.css
+  body
+    .app
+      .grid-item
+        form
+          input(type='text', name='search', placeholder='Search for nomz...')
+          input.pointer(type='submit', value='⚲')
+      .grid-item.map-container
+        #map 
+      .grid-item 
+        .options-bar
+          button#fullscreenMap.pointer map
+          button#favorites.pointer.fl-right ♥
+          button#search.selected.pointer.fl-right ⚲
+      .list-container
+        ul.list
+        
+    link(rel='stylesheet', href='style.css')     
