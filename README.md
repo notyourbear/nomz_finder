@@ -8,7 +8,7 @@ Visually, it is optimized for mobile screens.
 This was a fun little project to work on, so thanks for the opportunity!
 
 ## How to run
-Open the "index.html" file in the "dist" folder.
+Open https://notyourbear.github.io/nomz_finder/.
 
 ## More info the on the build.
 This app was built with plain old ES5/ES6 Javscript and LESS. It also includes a little bit of linting for JS files.
@@ -19,4 +19,4 @@ Everything is compiled via gulp(the 4.0 version) and Rollup. In order to run the
 
 * npm install (or yarn install)
 * "npm build" for the development verison
-* "npm prod" for the minified production version. 
+* "npm prod" for the minified production version.

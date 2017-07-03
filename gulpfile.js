@@ -21,7 +21,7 @@ const cleanCSSPlugin = new LessPluginCleanCSS({advanced: true})
 
 const paths = {
   criticalLess: 'src/critical.less',
-  dist: 'dist',
+  dist: 'docs',
   firebaseInit: 'src/firebase/init.js',
   includes: 'temp/includes',
   nonCriticalLess: ['src/optionsBar/style.less', 'src/util.less', 'src/list/style.less', 'src/loader/loader.less'],
