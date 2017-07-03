@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint src && eslint gulpfile.js",
-    "start": "open dist/index.html",
+    "start": "open index.html",
     "build": "gulp build",
     "buildProd": "gulp prod"
   },
